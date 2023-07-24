@@ -58,7 +58,7 @@ async function onRequest(req, res) {
       res.setHeader('Access-Control-Allow-Origin', '*');
       let cseBdy = await (await fetch('https://cse.google.com' + req.url)).text();
       return res.endAvail(cseBdy);
-
+ 
     }
 
     if (pat == '/chat/') {
