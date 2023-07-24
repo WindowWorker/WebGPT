@@ -1,0 +1,65 @@
+<html><head><meta charset="utf-8"><link rel="apple-touch-icon" sizes="180x180" href="public/img/icon.png"><link rel="icon" type="image/x-icon" href="public/img/favicon.ico"><title>WebGPT</title><link rel="stylesheet" href="public/css/demo.css?23">
+    <title>♻️Web𝗚𝗣𝗧</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script>
+    try{
+          let scriptjs=document.createElement('script');
+    scriptjs.src='public/js/script.js?'+new Date().getTime();
+    document.body.appendChild(scriptjs);
+    }catch(e){
+    addEventListener("DOMContentLoaded", (event) => {
+    let scriptjs=document.createElement('script');
+    scriptjs.src='public/js/script.js?'+new Date().getTime();
+    document.body.appendChild(scriptjs);
+    });
+    }
+
+    try{
+      
+    let visibleTitle=document.querySelector('[title="♻️Web𝗚𝗣𝗧"]');
+    visibleTitle.innerHTML=visibleTitle.innerHTML.toString().replace('WebGPT','PatGPT');
+    visibleTitle.setAttribute('title','♻️Pat𝗚𝗣𝗧');
+
+      document.querySelector('title').innerHTML='PatGPT';
+  
+      
+    }
+    catch(e){
+if(window.location.host.toLowerCase().includes('pat')){
+    addEventListener("DOMContentLoaded", (event) => {
+      
+    let visibleTitle=document.querySelector('[title="♻️Web𝗚𝗣𝗧"]');
+    visibleTitle.innerHTML=visibleTitle.innerHTML.toString().replace('WebGPT','PatGPT');
+    visibleTitle.setAttribute('title','♻️Pat𝗚𝗣𝗧');
+
+      document.querySelector('title').innerHTML='PatGPT';
+  
+  });                   
+}
+    }
+  </script>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  </head>
+  <body class="vsc-initialized">
+    <div class="chat">
+      <div class="chat-right">
+        <div class="chat-header" style="display: none;">
+          <h3><span title="♻️Web𝗚𝗣𝗧"><img style="filter:hue-rotate(45deg);position:relative;top:3px;height:1em;width:1em;" src="public/img/icon.png">WebGPT</span></h3>
+        </div>
+        <div class="chat-content"></div>
+        <div class="chat-input">
+          <form id="chat">
+            <textarea id="input" placeholder="Start a conversation..."></textarea>
+            <div class="chat-buttons">
+              <div class="link">
+             
+              </div>
+              <button id="send">Talk</button>
+              <button id="deep" disabled><span>Research</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+</body></html>

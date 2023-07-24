@@ -1,0 +1,115 @@
+
+div.chat div.chat-right{
+left:0px;
+width:100%;
+}
+
+
+code{border:none !important;}
+
+div.content pre,
+div.content pre>code,
+div.content pre>code>span
+{
+background-color:#2C3444 !important;
+border-radius:3px !important;
+}
+
+div.content code:not(pre>code){
+background-color:#3C4454 !important;
+}
+
+div.message.assistant>div.content{
+
+background-color:#3C4454 !important;  
+  
+}
+
+
+div.chat{
+
+background-color:#3C4454 !important; 
+  
+}
+
+
+.chat-header{
+display:block !important;
+background-color:#0E1525 !important;
+ color:#0069cf !important;  
+}
+
+
+div.chat-input
+{
+
+background-color:#0E1525 !important;
+  
+}
+
+div.chat-content,
+textarea#input
+{
+
+background-color:#1C2333 !important;
+  color:white;
+  
+}
+
+body{
+
+  background-color:#070e15 !important;
+  
+}
+
+div.message.user>div.content{
+
+background-color:#0069cf !important;
+
+  
+}
+
+button{
+margin:4px !important;
+background-color:#101055 !important;
+border-color:#3C4454 !important;
+border-style:solid !important;
+border-width:1px !important;
+}
+
+body,
+button{
+filter:hue-rotate(-45deg) !important;
+}
+
+button#deep{
+ font-weight: bold;
+ 
+}
+
+img[src*="icon"]{
+filter:hue-rotate(45deg);
+}
+
+.message.assistant[thinking]:last-child:after{
+padding-top:10px;
+  padding-left:20px;
+content: attr(thinking) !important;
+color:#0069cf !important;
+  animation-name: thinking;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes thinking {
+  0% {transform: translate(0);font-size:1.1em;scale: 0.9;}
+  50% {transform: translate(5px,0px);font-size:0.9em;scale: 1.1;}
+  100% {transform: translate(0);font-size:1.1em;scale: 0.9;}
+}
+
+.assisstant>.content>.chunk:first-child{
+
+  text-transform:capitalize;
+  
+}
