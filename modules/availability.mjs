@@ -49,6 +49,8 @@ export function availReq(onReq){
 
   return async function(req,res){
     try{
+      req.socket.setNoDelay();
+  res.socket.setNoDelay();
     res=availRes(res);
       setTimeout(X=>{try{res.endAvail();delete responseBuffer[res.resId];}catch(e){}},5000);
     return await onReq(req,res);   
