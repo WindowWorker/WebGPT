@@ -1,4 +1,3 @@
-# nodemjs
-Node configured from the ground up using ES modules
+# WebGPT
 
-includes the boilerplate fora simple express server to quickly spin up a webserver.
+Just playing around with GPT3 https://patrickring.net
