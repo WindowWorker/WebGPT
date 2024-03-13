@@ -87,7 +87,7 @@ async function onRequest(req, res) {
       return res.endAvail(JSON.stringify(resJson));
 
     }
-    let resp=await fetch('https://files-servleteer.vercel.app/webgpt'+req.url);
+    let resp=await fetch('https://files-servleteer-vercel-app-six.vercel.app/webgpt'+req.url);
     if(req.url=='/'||req.url==''){req.url='/index.html';}
     let file = Buffer.from(await(resp).arrayBuffer());
   res.setHeader('Content-Type',resp.headers.get('Content-Type'));
